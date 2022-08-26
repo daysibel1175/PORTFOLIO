@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="portafolio.png">
+    <link rel="icon" type="image/x-icon" href="images/portafolio.png">
     <title> PORTFÓLIO </title>
-    <link rel="stylesheet" media="screen and (min-width:1282px)" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="(max-width: 768px)">
+    <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
  </head>
 
- <body>
+ <body class="bg-light">
    <main>
-     <header>
-       <div class="cabezal">
-         <img id="fotodeperfil" src="Fotodeperfil (2).jpg" alt="fotodeperfil" width="50" height="50">
-         <a href="#" class="ancoras"> Apresentação </a>
-         <a href="#"class="ancoras"> Formação </a>
-         <a href="#"class="ancoras"> Experiencia </a>
-         <a href="#"class="ancoras"> Projetos </a>
-         <a href="#"class="ancoras" id="contato"> Contato </a>
-       </div>
-
-        <div>
-         <img id="fondo" src="otrofondo.JPG" alt="imagendefondo" width="" height="" min-width="1282px" max-width="360">
+     <header> 
+        <nav>
+          <div class="cabezal">
+              <img id="fotodeperfil" src="images/Fotodeperfil (2).jpg" alt="fotodeperfil" width="50" height="50">
+              <a href="#" class="ancoras"> Apresentação </a>
+              <a href="#"class="ancoras"> Formação </a>
+              <a href="#"class="ancoras"> Experiencia </a>
+              <a href="#"class="ancoras"> Projetos </a>
+              <a href="#"class="ancoras"  id="contato"> Contato </a>
+          </div>
+        </nav>
+        <div class="masthead"></div>
+         <img id="fondo" src="images/otrofondo.JPG" alt="imagendefondo" width="" height="" min-width="1282px" max-width="360">
        
        
-         <img id="fotodeperfil2" src="Fotodeperfil (2).jpg" alt="foto" width="200" height="200">
+         <img id="fotodeperfil2" src="images/Fotodeperfil (2).jpg" alt="foto" width="200" height="200">
         </div>
     
         <div class="iconos">
@@ -85,21 +89,24 @@
       <div class="meusprojetos"> 
         <h1> Projetos </h1>
         <div class="projetos">
+          
           <div class="projeto">
-            <img src="pao-caseiro-recheado-com-queijo-e-presunto.webp" alt="imagemdoprojeto" width="200" height="100">
+            <img src="images/pao-caseiro-recheado-com-queijo-e-presunto.webp" alt="imagemdoprojeto" width="200" height="100">
             <h2 class="titulos">Turma18</h2>
             <p class="parrafo"> Meu primer projeto, "Receitas Faceis" um site de receitas rápidas e simples, principalmente salgadas, feito com o básico de html e css.</p>
             <a class="repositorio" href="https://github.com/daysibel1175/Turma1819"> Repositorio </a>
-         </div>
+          </div>
          <div class="projeto">
-            <img src="Templo de arequipa peru.jpeg" alt="imagemdoproajeto2" width="200" height="100">
+            <img src="images/Templo de arequipa peru.jpeg" alt="imagemdoproajeto2" width="200" height="100">
            <h2 class="titulos">Turma1819</h2>
            <p class="parrafo"> O meu segundo projeto, Templos Sud, site com informações sobre os templos da igreja de Jesuscristo dos Santos dos ultimos dias no mundo. Também com o básico do html e css.</p>
            <a class="repositorio" href="https://github.com/daysibel1175/turma18/tree/main/turma18"> Repositorio </a>
          </div>
+         
+        
          <img src="" alt="">
         </div>
-
+         
       </div>
     </main>
     <div class="rodapé">
@@ -114,26 +121,31 @@
        <a></a>
        <img src="" alt="">
        <a></a>
+
       </div>
+      <div> <ul id="ul"> </ul></div>
       <div class="formulario">
-       <form>
-        <label for="nome"> Nome </label><br>
-        <input id="nome"  type="text" placeholder="Carlos"><br>
+        <form id="form" class="form container mx-auto row aling-items" >
+         <label> Nome 
+         <input id="nome"  type="text" class="form-control" placeholder="Carlos" required>
+         </label>
 
-        <label for="email"> E-mail </label><br>
-        <input id="email" type="email" onblur="validarEmail()" onfocus="redefinirMsg()" placeholder="Carlos@gmail.com"><br>
-        <span id="error-email"></span>
-
-        <label for="asunto"> Asunto </label><br>
-        <input id="asunto" type="text"><br>
-        <label for="asunto"> Mensagem </label><br>
-        <input id="mensagem" type="text"><br>
-        <button id="botão"> Enviar </button>
-       </form>
+         <label> E-mail 
+         <label id="error-email" onblur='validarEmail()'></label>
+         <input id="email" type="text"  onblur="validarEmail()" class="form-control email" placeholder="Carlos@gmail.com" required>
+         </label>
+         <label > Asunto 
+         <input class="form-control"  id="asunto" type="text">
+         </label>
+         <label> Mensagem 
+         <input class="form-control"  id="mensagem" type="text" required>
+         </label>
+         <button id="botão" type="submit" class ="mt-4 btn btn-primary"> Enviar </button>
+        </form>
+        
       </div>
     </div>
+    
+    <script src="javascript.js"></script>
   </body>
-
-
-
 </html>
