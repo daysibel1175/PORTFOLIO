@@ -1,0 +1,146 @@
+:root {
+  --color-text: #fff;
+  --color-button: #3ca4ce;
+  --color-secondary: #0b1933;
+  --color-dark: #091f3f;
+  --color-body: #081227;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-body);
+  color: var(--color-text);
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 2rem;
+}
+#assinatura {
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#menu {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}
+#menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+#menu ul li {
+  list-style-type: none;
+}
+#menu ul li a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+#presentacao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 4rem;
+  margin:0 10% 0 10%;
+}
+#presentacao_text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: center;
+}
+#presentacao_img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#presentacao_img img {
+  max-width: 100%;
+  height: auto;
+}
+#sobre_mi {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+#sobremi_contenedor{
+    width: 80%;
+    background-color: #0c0c0c99;
+    padding: 4rem;
+}
+#sobremi_conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#img_sobremi,
+#sobremi_text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#sobremi_text {
+  flex-direction: column;
+}
+.sobremi_resumo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+#habilidades{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding:4rem;
+  margin: 0 10% 0 10%;
+  gap: 2rem;
+}
+#tecnoligias{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+#tecnoligias, #cursos_realizados{
+  width: 50%;
+  align-items: center;
+}
+.icone_tecnologia{
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  border-radius: 100%;
+  width: 120px;
+  background-color: var(--color-secondary);
+  display: flex;
+  padding: 1rem;
+}
+.cursos_realizados{
+  justify-content: space-between;
+  display: flex;
+  
+}
