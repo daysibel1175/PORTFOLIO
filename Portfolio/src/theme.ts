@@ -7,11 +7,11 @@ let theme = createTheme({
       main: '#232323',
     },
     secondary: {
-      main: "#232323",
+      main: "#ff0033",
     },
   },
   typography:{
-    fontFamily:"fantasy"
+    fontFamily:"Lucida Console"
   }
 });
 
