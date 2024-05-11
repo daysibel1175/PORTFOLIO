@@ -11,7 +11,7 @@ let theme = createTheme({
     },
   },
   typography:{
-    fontFamily:"Lucida Console"
+    fontFamily:"Times New Roman"
   }
 });
 
