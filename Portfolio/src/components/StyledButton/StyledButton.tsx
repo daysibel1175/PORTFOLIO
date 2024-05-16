@@ -22,12 +22,15 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
             backgroundColor: theme.palette.secondary.light
         }
     }))
-
+              const CV = '../../assets/CV/CV-DAYSIBEL-COTIZ-BR-DESENVOLVIMENTO-WEB.pdf'
+              
     return (
         <>
-            <StyledButton>
-                {children}
-            </StyledButton>
+          <a href={CV} download>
+                <StyledButton>
+                    {children}
+                </StyledButton>
+            </a>
         </>
     )
 }
