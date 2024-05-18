@@ -43,7 +43,7 @@ const About = () => {
                     <Container maxWidth="lg">
                     <Typography color="primary.main" variant="h1" textAlign="center" pt={6}>About Me</Typography>
                                 <Grid container display="flex" justifyContent="center" pt={3}>
-                                    <Grid item xs={2} md={3} display="flex" justifyContent="center">
+                                    <Grid item xs={12} md={3} display="flex" justifyContent="center">
                                    
                               <StyledCards>
                                 <MenuBookTwoToneIcon/>
@@ -56,7 +56,7 @@ const About = () => {
                                       </Typography>
                                       </StyledCards>
 </Grid>
-                                      <Grid item xs={2} md={3} display="flex" justifyContent="center">
+                                      <Grid item xs={12} md={3} display="flex" justifyContent="center">
                               <StyledCards>
 
                              <WorkOutlineTwoToneIcon/>
