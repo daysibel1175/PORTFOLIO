@@ -87,42 +87,42 @@ const About = () => {
     <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton >
         <Typography color="primary.main" variant="h6" textAlign="center">
-         Stack
+         HTML
         </Typography>
       </StyledButton>
     </Grid>
     <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
-         Stack
+         CSS
         </Typography>
       </StyledButton>
     </Grid>
     <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
-         Stack
+         Javascript 
         </Typography>
       </StyledButton>
     </Grid>
     <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
-         Stack
+         MongoDB 
         </Typography>
       </StyledButton>
     </Grid>
     <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
-         Stack
+         SQLite
         </Typography>
       </StyledButton>
     </Grid>
     <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
-         Stack
+         Typescript
         </Typography>
       </StyledButton>
     </Grid>
