@@ -33,8 +33,7 @@ const About = () => {
             textAlign:'center',
             '&:hover': {
                 backgroundColor: theme.palette.secondary.light,
-                transition: 'background-color 2s ease',
-paddingTop: "100px"
+                transition: 'background-color 2s ease'
             }
         }))
 
@@ -43,7 +42,7 @@ paddingTop: "100px"
                 <StyledAbout>
                     <Container maxWidth="lg">
                     <Typography color="primary.main" variant="h1" textAlign="center" pt={6}>About Me</Typography>
-                                <Grid container display="flex" justifyContent="center" pt={3}>
+                                <Grid container display="flex" gap={3} justifyContent="center" pt={3}>
                                     <Grid item xs={12} md={3} display="flex" justifyContent="center">
                                    
                               <StyledCards>
