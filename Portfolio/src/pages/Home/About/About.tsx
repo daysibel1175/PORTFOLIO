@@ -84,56 +84,56 @@ const About = () => {
                     </Container>
                     <Container maxWidth="lg">
   <Grid container spacing={2} pt={6} pb={4}>
-    <Grid item xs={2} md={3} display="flex" justifyContent="center">
+    <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton >
         <Typography color="primary.main" variant="h6" textAlign="center">
          Stack
         </Typography>
       </StyledButton>
     </Grid>
-    <Grid item xs={2} md={3} display="flex" justifyContent="center">
+    <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
          Stack
         </Typography>
       </StyledButton>
     </Grid>
-    <Grid item xs={2} md={3} display="flex" justifyContent="center">
+    <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
          Stack
         </Typography>
       </StyledButton>
     </Grid>
-    <Grid item xs={2} md={3} display="flex" justifyContent="center">
+    <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
          Stack
         </Typography>
       </StyledButton>
     </Grid>
-    <Grid item xs={2} md={3} display="flex" justifyContent="center">
+    <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
          Stack
         </Typography>
       </StyledButton>
     </Grid>
-    <Grid item xs={2} md={3} display="flex" justifyContent="center">
+    <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
          Stack
         </Typography>
       </StyledButton>
     </Grid>
-    <Grid item xs={2} md={3} display="flex" justifyContent="center">
+    <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
          Stack
         </Typography>
       </StyledButton>
     </Grid>
-    <Grid item xs={2} md={3} display="flex" justifyContent="center">
+    <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
          Stack
