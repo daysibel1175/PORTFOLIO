@@ -82,7 +82,7 @@ const About = () => {
                                       <Typography color="primary.main" variant="h1" textAlign="center" pt={6}>Skills</Typography>
                                     
                     </Container>
-                    <Container maxWidth="lg">
+                    <Container maxWidth="lg" translate="no">
   <Grid container spacing={2} pt={6} pb={4}>
     <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton >
