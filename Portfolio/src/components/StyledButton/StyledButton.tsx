@@ -19,18 +19,20 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
         justifyContent: "center",
         gap: "10px",
         '&:hover': {
-            backgroundColor: theme.palette.secondary.light
+            backgroundColor: theme.palette.secondary.light,
+            transition: 'background-color 1s ease'
         }
     }))
-              const CV = '../../assets/CV/CV-DAYSIBEL-COTIZ-BR-DESENVOLVIMENTO-WEB.pdf'
+             
+
               
     return (
         <>
-          <a href={CV} download>
+         
                 <StyledButton>
                     {children}
                 </StyledButton>
-            </a>
+         
         </>
     )
 }
