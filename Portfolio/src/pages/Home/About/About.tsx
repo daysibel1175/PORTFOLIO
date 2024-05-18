@@ -33,7 +33,8 @@ const About = () => {
             textAlign:'center',
             '&:hover': {
                 backgroundColor: theme.palette.secondary.light,
-                transition: 'background-color 2s ease'
+                transition: 'background-color 2s ease',
+paddingTop: "100px"
             }
         }))
 
