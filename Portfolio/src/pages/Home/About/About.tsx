@@ -12,7 +12,7 @@ const About = () => {
             display: "flex",
             flexDirection:"column",
             [theme.breakpoints.up('xs')]: { // <= mobile
-                paddingTop: "100px",
+                paddingTop: "10px",
       
             },
             [theme.breakpoints.up('md')]: { // >=mobile
