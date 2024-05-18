@@ -27,8 +27,8 @@ const Hero = () => {
   return (
       <>
           <StyledHero>
-              <Container maxWidth="lg" pb={4}>
-                  <Grid container spacing={2}>
+              <Container maxWidth="lg">
+                  <Grid container spacing={2} pb={10}>
                       <Grid item xs={12} md={5}>
                           <Box position="relative">
                               <Box position="absolute" width={"120%"} top={-100} right={0}>
