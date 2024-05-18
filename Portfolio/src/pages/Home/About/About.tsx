@@ -129,14 +129,14 @@ const About = () => {
     <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
-         Stack
+         Bootstrap 
         </Typography>
       </StyledButton>
     </Grid>
     <Grid item xs={4} md={3} display="flex" justifyContent="center">
       <StyledButton>
         <Typography  color="primary.main" variant="h6" textAlign="center">
-         Stack
+         NodeJs
         </Typography>
       </StyledButton>
     </Grid>
