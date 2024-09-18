@@ -7,11 +7,11 @@ let theme = createTheme({
       main: '#232323',
     },
     secondary: {
-      main: "#ff0033",
+      main: "#999999",
     },
   },
   typography:{
-    fontFamily:"Times New Roman"
+    fontFamily:"Poppins, sans serif"
   }
 });
 
