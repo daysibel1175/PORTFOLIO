@@ -5,7 +5,7 @@ import dvsolutions from '../../../assets/images/dvsolutions.png'
 import Cards from "../../../components/cards/Cards";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
-import '../../../assets/styles.css'
+import '../../../assets/styles/swiper.css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css';
@@ -24,7 +24,7 @@ const Works = () => {
       paddingTop: "10px",
     },
     [theme.breakpoints.up("md")]: {
-      // >=mobile
+      // >= mobile
       paddingTop: "0",
     },
   }));
@@ -49,7 +49,7 @@ const Works = () => {
                 title="DVSolutions"
                 description="Portfolio para empresa DVSolutions desenvolvido com React"
                 imageUrl={dvsolutions}
-                repoLink="https://github.com/tu-usuario/tu-repositorio"
+                repoLink="https://github.com/daysibel1175/DVSolutions"
                 deployLink="https://dv-solutions-iota.vercel.app/"
               />
               </SwiperSlide>
@@ -57,21 +57,21 @@ const Works = () => {
                 title="Curso Exito"
                 description="Lading page de cursos para estudiantes de ensino fundamental e medio"
                 imageUrl={projetoexito}
-                repoLink="https://github.com/tu-usuario/tu-repositorio"
+                repoLink="https://github.com/daysibel1175/ProjetoExito"
                 deployLink="https://projeto-exito.vercel.app/"
               /></SwiperSlide>
       <SwiperSlide> <Cards
                 title="Dayflix"
                 description="Copia da plataforma de streaming Netflix desenvolvido no minicurso na DIO"
                 imageUrl={dayflix}
-                repoLink="https://github.com/tu-usuario/tu-repositorio"
+                repoLink="https://github.com/daysibel1175/DAYFLIX"
                 deployLink="https://dayflix-seven.vercel.app/"
               /></SwiperSlide>
       <SwiperSlide><Cards
-                title="Lizard"
-                description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
+                title="API TRILHAS BRASIL"
+                description="API REST feita no projeto final do curso backend. Usados Javascript como  linguagem, MongoAtlas  para hospedagem."
                 imageUrl="/static/images/cards/contemplative-reptile.jpg"
-                repoLink="https://github.com/tu-usuario/tu-repositorio"
+                repoLink="https://github.com/daysibel1175/API-REST-CRUD-1.1"
                 deployLink="https://tu-implementacion.netlify.app"
               />
               </SwiperSlide>
