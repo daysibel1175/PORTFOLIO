@@ -11,12 +11,14 @@ const Hero = () => {
       height: "100vh",
       display: "flex",
       alignItems: "center",
+     
       [theme.breakpoints.up('xs')]: { // <= mobile
           paddingTop: "100px",
-
+         
       },
       [theme.breakpoints.up('md')]: { // >=mobile
           paddingTop: "0",
+          justifyContent:"end",
       }
   }))
 
@@ -28,7 +30,7 @@ const Hero = () => {
       <>
           <StyledHero>
               <Container maxWidth="lg">
-                  <Grid container spacing={2} pb={10}>
+                  <Grid container spacing={2} pb={1}>
                       <Grid item xs={12} md={5}>
                           <Box position="relative">
                               <Box position="absolute" width={"120%"} top={-100} right={0}>
@@ -43,7 +45,7 @@ const Hero = () => {
                           <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Daysibel Cotiz</Typography>
                           <Typography color="primary.contrastText" variant="h2" textAlign="center" >I'm a FullStack Developer</Typography>
                           <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
-                              <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                              <Grid item xs={12} md={5} display="flex" justifyContent="center">
                               <a href='../../../../public/CV/CV-DAYSIBEL-COTIZ-BR-DESENVOLVIMENTO-WEB.pdf' download>
                                   <StyledButton>
                                       <FileDownloadIcon />
@@ -53,7 +55,7 @@ const Hero = () => {
                                   </StyledButton>
                                   </a>
                               </Grid>
-                              <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                              <Grid item xs={12} md={5} display="flex" justifyContent="center">
                               <a href="mailto:daysicotiz2@gmail.com?subject=I%20have%20work%20for%20you&body=You%20are%20hired">
                                   <StyledButton>
                                       <EmailIcon />

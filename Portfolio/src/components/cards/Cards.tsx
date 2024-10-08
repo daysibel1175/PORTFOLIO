@@ -2,10 +2,9 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
+import { Typography, styled} from "@mui/material";
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
-
 interface CardProps {
     title: string;
     description: string;
@@ -13,19 +12,38 @@ interface CardProps {
     repoLink: string;
     deployLink: string;
   }
-
+  
 const Cards : React.FC<CardProps> = ({ title, description, imageUrl, deployLink, repoLink }) => {
+
+  const StyledCard = styled("div")(({ theme }) => ({
+    backgroundColor: theme.palette.primary.contrastText,
+    width:"21.875rem",
+    maxWidth:"100%",
+    height:"21rem",
+    maxHeight:"100%",
+    padding:"2px",
+    [theme.breakpoints.up("xs")]: {
+      // <= mobile
+      width:"21.875rem",
+      height:"21rem",
+    },
+    [theme.breakpoints.up("md")]: {
+      // >= mobile
+    
+    },
+  }));
+
   return (
     <div>
-        <Card sx={{ maxWidth: 350, maxHeight:310}}  style={{ maxWidth: '100%', padding:'1rem'}}>
+  <StyledCard>
         <CardMedia
         component="img"
         alt={title}
-        height="150"
+        height="170"
         image={imageUrl}
-        style={{ maxWidth: '100%'}}
+        style={{ maxWidth: '100%', borderBottom: 'solid 1px gray', objectFit:'cover'}}
       />
-      <CardContent>
+      <CardContent  translate="no">
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
@@ -41,7 +59,10 @@ const Cards : React.FC<CardProps> = ({ title, description, imageUrl, deployLink,
           Implementa
         </a></Button>
       </CardActions>
-        </Card>
+     
+  </StyledCard>
+    
+       
     
     </div>
   );

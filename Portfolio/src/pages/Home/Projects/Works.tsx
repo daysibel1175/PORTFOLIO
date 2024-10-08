@@ -18,7 +18,7 @@ const Works = () => {
     display: "flex",
     alignItems: "start",
     justifyContent:'center',
-    padding:'2rem',
+    padding:'0 3rem ',
     [theme.breakpoints.up("xs")]: {
       // <= mobile
       paddingTop: "10px",
@@ -26,6 +26,7 @@ const Works = () => {
     [theme.breakpoints.up("md")]: {
       // >= mobile
       paddingTop: "0",
+      height: "100vh",
     },
   }));
   return (
@@ -36,18 +37,18 @@ const Works = () => {
       <Swiper
         modules={[Navigation, Pagination, A11y]}
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={2}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
-      style={{ maxWidth: '100%', padding:'3rem', marginTop:"2rem"}}
+      style={{ maxWidth: '100%', padding:'1rem 3rem', height:"70vh"}}
       navigation
       pagination={{ clickable: true }}
     >
       
-      <SwiperSlide> 
-         <Cards
+      <SwiperSlide > 
+         <Cards 
                 title="DVSolutions"
-                description="Portfolio para empresa DVSolutions desenvolvido com React"
+                description="React, Material MUI, CSS, Typescrypt, Swipetr"
                 imageUrl={dvsolutions}
                 repoLink="https://github.com/daysibel1175/DVSolutions"
                 deployLink="https://dv-solutions-iota.vercel.app/"
@@ -55,21 +56,21 @@ const Works = () => {
               </SwiperSlide>
       <SwiperSlide> <Cards
                 title="Curso Exito"
-                description="Lading page de cursos para estudiantes de ensino fundamental e medio"
+                description="HTML, CSS, JS, Swiper, Bootstrap"
                 imageUrl={projetoexito}
                 repoLink="https://github.com/daysibel1175/ProjetoExito"
                 deployLink="https://projeto-exito.vercel.app/"
               /></SwiperSlide>
       <SwiperSlide> <Cards
                 title="Dayflix"
-                description="Copia da plataforma de streaming Netflix desenvolvido no minicurso na DIO"
+                description="HML, CSS, JS, Bootstrap"
                 imageUrl={dayflix}
                 repoLink="https://github.com/daysibel1175/DAYFLIX"
                 deployLink="https://dayflix-seven.vercel.app/"
               /></SwiperSlide>
       <SwiperSlide><Cards
                 title="API TRILHAS BRASIL"
-                description="API REST feita no projeto final do curso backend. Usados Javascript como  linguagem, MongoAtlas  para hospedagem."
+                description="JS, Mongoose"
                 imageUrl="/static/images/cards/contemplative-reptile.jpg"
                 repoLink="https://github.com/daysibel1175/API-REST-CRUD-1.1"
                 deployLink="https://tu-implementacion.netlify.app"

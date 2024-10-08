@@ -2,7 +2,18 @@
     color:rgb(183, 190, 219)
 }
 .swiper-pagination-bullet {
-    background: rgb(183, 190, 219);
+    border: solid 5px rgb(129, 152, 229);
+    padding: 5px;
+    opacity: 0.78;
+}
+.swiper-pagination-bullet-active{
+    border: solid 5px rgb(222, 222, 222);
+    padding: 5px;
+    background: rgb(255, 255, 255) !important;
+}
+.swiper-pagination{
+    margin-top: 2rem;
+    
 }
 .swiper-button-next:after,.swiper-button-prev:after {
     color: rgb(255, 255, 255);
