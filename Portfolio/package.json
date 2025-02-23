@@ -1,7 +1,7 @@
 {
   "name": "meuportfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,26 +10,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/icons-material": "^5.15.17",
-    "@mui/material": "^5.15.17",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.5",
+    "@mui/material": "^6.4.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-material-ui-carousel": "^3.4.2",
-    "react-router-dom": "^6.23.1",
-    "swiper": "^11.1.14"
+    "react-router-dom": "^7.2.0",
+    "swiper": "^11.2.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.1"
   }
 }
