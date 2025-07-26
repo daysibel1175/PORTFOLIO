@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "about": "Sobre Mi",
+    "skills": "Habilidades",
+    "projects": "Proyectos"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "education": {
+      "label": "Educación",
+      "description": "Estudiando Análisis y Desarrollo de Sistemas"
+    },
+    "experience": {
+      "label": "Experiencia",
+      "description": "Desarrollo FullStack"
+    },
+    "description": "Soy una desarrolladora apasionada por la tecnología, impulsada por el reto de resolver problemas complejos. Me encanta participar en proyectos que ponen a prueba mis habilidades y me motivan a seguir aprendiendo. Actualmente me estoy sumergiendo profundamente en el mundo de React, ampliando mis conocimientos y perfeccionando mis competencias con esta poderosa biblioteca. Creo firmemente que el aprendizaje continuo es clave para crecer en la industria tecnológica, y siempre estoy abierta a explorar nuevas tecnologías y metodologías. Estoy entusiasmada por aplicar mi dedicación y versatilidad en nuevos proyectos emocionantes e innovadores."
+  },
+  "hero": {
+    "download_cv": "Descargar CV",
+    "contact_me": "Contáctame"
+  },
+  "skills": {
+    "title": "Habilidades"
+  }
+}
