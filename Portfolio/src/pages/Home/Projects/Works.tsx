@@ -1,10 +1,13 @@
 import { Typography, styled, Container } from "@mui/material";
-import dayflix from '../../../assets/images/dayflix.png'
-import projetoexito from '../../../assets/images/cursoexito.png'
-import dvsolutions from '../../../assets/images/dvsolutions.png'
+import dayflix from '../../../assets/images/dayflix.png';
+import projetoexito from '../../../assets/images/cursoexito.png';
+import dvsolutions from '../../../assets/images/dvsolutions.png';
+import cafeGourmet from "../../../assets/images/cafeGourmet.jpeg";
+import codepay from "../../../assets/images/codepay.jpeg";
+import trilhasBrasil from "../../../assets/images/trilhasBrasil.jpeg"
 import Cards from "../../../components/cards/Cards";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import '../../../assets/styles/swiper.css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -18,37 +21,61 @@ const Works = () => {
     display: "flex",
     alignItems: "start",
     justifyContent:'center',
-    padding:'0 3rem ',
+    padding:'0 2rem ',
     [theme.breakpoints.up("xs")]: {
-      // <= mobile
-      paddingTop: "10px",
+     
+      padding: "10px",
     },
     [theme.breakpoints.up("md")]: {
-      // >= mobile
-      paddingTop: "0",
-      height: "100vh",
+     
+      padding: "0",
+     
     },
   }));
   return (
     <>
     <StyledWork>
-      <Container maxWidth="lg">
-      <Typography color="primary.contrastText" variant="h1" textAlign="center" pt={6}>Projects</Typography>
+      <Container maxWidth="lg" id="projects" sx={{ height: '100%' }}>
+      <Typography color="primary.contrastText" variant="h1" textAlign="center" pt={0}>Projects</Typography>
       <Swiper
-        modules={[Navigation, Pagination, A11y]}
-      spaceBetween={50}
-      slidesPerView={2}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-      style={{ maxWidth: '100%', padding:'1rem 3rem', height:"70vh"}}
-      navigation
-      pagination={{ clickable: true }}
-    >
-      
-      <SwiperSlide > 
+  modules={[Navigation, Pagination, A11y, Autoplay]}
+   autoplay={{
+    delay: 3000, 
+    disableOnInteraction: false, 
+  }}
+
+  breakpoints={{
+    320: {
+      slidesPerView: 1,
+    },
+    600: {
+      slidesPerView: 1,
+    },
+    960: {
+      slidesPerView: 1,
+    },
+    1280: {
+      slidesPerView: 1,
+    }
+  }}
+  spaceBetween={10}
+  pagination={{ clickable: true }}
+  navigation
+  
+>
+  <SwiperSlide>
+                <Cards
+                title="Café Gourmet"
+                description=""
+                imageUrl={cafeGourmet}
+                repoLink="https://github.com/tu-usuario/tu-repositorio"
+                deployLink="https://tu-implementacion.netlify.app"
+              />
+              </SwiperSlide>  
+      <SwiperSlide> 
          <Cards 
                 title="DVSolutions"
-                description="React, Material MUI, CSS, Typescrypt, Swipetr"
+                description="React, Material MUI, CSS, Typescrypt, Swiper"
                 imageUrl={dvsolutions}
                 repoLink="https://github.com/daysibel1175/DVSolutions"
                 deployLink="https://dv-solutions-iota.vercel.app/"
@@ -71,36 +98,21 @@ const Works = () => {
       <SwiperSlide><Cards
                 title="API TRILHAS BRASIL"
                 description="JS, Mongoose"
-                imageUrl="/static/images/cards/contemplative-reptile.jpg"
+                imageUrl={trilhasBrasil}
                 repoLink="https://github.com/daysibel1175/API-REST-CRUD-1.1"
                 deployLink="https://tu-implementacion.netlify.app"
               />
               </SwiperSlide>
-              <SwiperSlide><Cards
-                title="Lizard"
-                description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
-                imageUrl="/static/images/cards/contemplative-reptile.jpg"
+              
+              <SwiperSlide>
+                <Cards
+                title="Codepay"
+                description=""
+                imageUrl={codepay}
                 repoLink="https://github.com/tu-usuario/tu-repositorio"
                 deployLink="https://tu-implementacion.netlify.app"
               />
-              </SwiperSlide>  <SwiperSlide><Cards
-                title="Lizard"
-                description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
-                imageUrl="/static/images/cards/contemplative-reptile.jpg"
-                repoLink="https://github.com/tu-usuario/tu-repositorio"
-                deployLink="https://tu-implementacion.netlify.app"
-              />
-              </SwiperSlide>
-              <SwiperSlide><Cards
-                title="Lizard"
-                description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
-                imageUrl="/static/images/cards/contemplative-reptile.jpg"
-                repoLink="https://github.com/tu-usuario/tu-repositorio"
-                deployLink="https://tu-implementacion.netlify.app"
-              />
-              </SwiperSlide>
-   
-    
+              </SwiperSlide>            
     </Swiper>
       </Container>
    </StyledWork>
