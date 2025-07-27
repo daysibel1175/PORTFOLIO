@@ -68,8 +68,8 @@ const Works = () => {
                 title="Café Gourmet"
                 description="TS, React, MUI, Swiper"
                 imageUrl={cafeGourmet}
-                repoLink="https://github.com/tu-usuario/tu-repositorio"
-                deployLink="https://tu-implementacion.netlify.app"
+                repoLink="https://github.com/daysibel1175/cafe-gourmet"
+                deployLink="https://cafe-gourmet-wine.vercel.app/"
               />
               </SwiperSlide>  
       <SwiperSlide> 
@@ -109,8 +109,8 @@ const Works = () => {
                 title="Codepay"
                 description=""
                 imageUrl={codepay}
-                repoLink="https://github.com/tu-usuario/tu-repositorio"
-                deployLink="https://tu-implementacion.netlify.app"
+                repoLink="https://github.com/daysibel1175/codepay"
+                deployLink="https://codepay-rust.vercel.app/"
               />
               </SwiperSlide>            
     </Swiper>
