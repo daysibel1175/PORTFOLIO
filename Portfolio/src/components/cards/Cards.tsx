@@ -1,8 +1,7 @@
 // Card.js (componente de tarjeta reutilizable)
-import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { Typography, styled} from "@mui/material";
+import { Typography, backdropClasses, styled} from "@mui/material";
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 interface CardProps {
@@ -15,35 +14,57 @@ interface CardProps {
   
 const Cards : React.FC<CardProps> = ({ title, description, imageUrl, deployLink, repoLink }) => {
 
-  const StyledCard = styled("div")(({ theme }) => ({
-    backgroundColor: theme.palette.primary.contrastText,
-    width:"21.875rem",
-    maxWidth:"100%",
-    height:"21rem",
-    maxHeight:"100%",
-    padding:"2px",
-    [theme.breakpoints.up("xs")]: {
-      // <= mobile
-      width:"21.875rem",
-      height:"21rem",
-    },
-    [theme.breakpoints.up("md")]: {
-      // >= mobile
-    
-    },
-  }));
+ const StyledCard = styled("div")(({ theme }) => ({
+  backgroundColor: theme.palette.primary.contrastText,
+  width: "85%",
+  maxWidth: "100%", 
+  minHeight: "350px",
+  height: "90%",
+  maxHeight:"100%",
+  padding: "0rem",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+  [theme.breakpoints.up("xs")]: {
+    width: "100%",
+    maxWidth: "100%",
+    margin: "0 auto",  
+    boxSizing: "border-box",
+  },
+  [theme.breakpoints.up("sm")]: {
+    width: "100%",
+    padding: "0",
+  },
+  [theme.breakpoints.up("md")]: {
+    width: "80%",
+    padding: "0",
+  },
+
+}));
 
   return (
-    <div>
+    
   <StyledCard>
         <CardMedia
-        component="img"
-        alt={title}
-        height="170"
-        image={imageUrl}
-        style={{ maxWidth: '100%', borderBottom: 'solid 1px gray', objectFit:'cover'}}
-      />
-      <CardContent  translate="no">
+  component="img"
+  alt={title}
+  image={imageUrl}
+  style={{
+    width: '100%',
+    height: '60%',
+    objectFit:"fill",
+    borderBottom: 'solid 1px gray',
+  }}
+/>
+      <CardContent  
+      translate="no"
+      style={{
+    width: '100%',
+    height: '25%',
+    padding: '0.5rem 1rem',
+  }}
+      >
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
@@ -51,7 +72,12 @@ const Cards : React.FC<CardProps> = ({ title, description, imageUrl, deployLink,
           {description}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions
+      style={{
+    height: '5%',
+   
+  }}
+      >
         <Button size="small"> <a href={repoLink} target="_blank" rel="noopener noreferrer">
           Repositorio
         </a></Button>
@@ -64,7 +90,7 @@ const Cards : React.FC<CardProps> = ({ title, description, imageUrl, deployLink,
     
        
     
-    </div>
+  
   );
 };
 
