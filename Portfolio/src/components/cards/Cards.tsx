@@ -1,7 +1,7 @@
 // Card.js (componente de tarjeta reutilizable)
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { Typography, backdropClasses, styled} from "@mui/material";
+import { Typography, styled} from "@mui/material";
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 interface CardProps {
