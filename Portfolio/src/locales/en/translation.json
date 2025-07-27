@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "about": "About me",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "education": {
+      "label": "Education",
+      "description": "Pursuing a Degree in Systems Analysis and Development"
+    },
+    "experience": {
+      "label": "Experience",
+      "description": "FullStack Development"
+     
+    },
+    "description": "I'm a developer driven by a deep passion for technology and the thrill of solving complex problems. I love taking part in projects that challenge my skills and push me to keep learning and evolving. Right now, I'm diving deep into the world of React, expanding my expertise and sharpening my abilities with this powerful library. I believe continuous learning is essential for growing in the tech industry, and I'm always eager to explore new tools and methodologies. I'm excited to bring my dedication and diverse skill set to innovative and inspiring new projects."
+  },
+  "hero": {
+    "download_cv": "Download CV",
+    "contact_me": "Contact me"
+  },
+  "skills": {
+    "title": "Skills"
+  }
+}
