@@ -66,7 +66,7 @@ const Works = () => {
   <SwiperSlide>
                 <Cards
                 title="Café Gourmet"
-                description=""
+                description="TS, React, MUI, Swiper"
                 imageUrl={cafeGourmet}
                 repoLink="https://github.com/tu-usuario/tu-repositorio"
                 deployLink="https://tu-implementacion.netlify.app"
